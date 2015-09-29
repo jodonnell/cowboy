@@ -5,6 +5,7 @@
     <script src="lib/class.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/game_init.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/game.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/images.js" type="text/javascript" charset="utf-8"></script>
     <title>Game</title>
   </head>
   <body>
@@ -33,11 +34,12 @@ var game = new Game(gameInit);
     window.onEachFrame = onEachFrame;
 })();
 
-
+var gameImages = new Images(function() {
       window.onEachFrame(function() {
           var time = game.updateWithTime();
           game.update();
           console.log(time)
+      });
       });
     </script>
   </body>
