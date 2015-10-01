@@ -2,7 +2,7 @@
 <html>
   <head>
     <script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="lib/lodash.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="lib/lodash.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/class.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/game_init.js" type="text/javascript" charset="utf-8"></script>
     <script src="lib/game.js" type="text/javascript" charset="utf-8"></script>
@@ -15,7 +15,7 @@
     <script src="lib/physics_hold_jump.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="lib/tumble_weed.js" type="text/javascript" charset="utf-8"></script>
-    <script src="lib/collision_detection.js" type="text/javascript" charset="utf-8"></script>        
+    <script src="lib/collision_detection.js" type="text/javascript" charset="utf-8"></script>
     <title>Game</title>
   </head>
   <body>
@@ -31,6 +31,7 @@
           Gravity: <input name="gravity" type="number" value="-3">
         </div>
         <div class="variable-physics" style="display: none">
+          Starting Velocity: <input name="starting-velocity" type="number" value="-15">
           Gravity: <input name="gravity" type="number" value="0.5">
           Velocity when let go: <input name="gravity-released" type="number" value="-6">
         </div>
@@ -58,7 +59,7 @@ var game = new Game(gameInit);
             setInterval(cb, 1000 / 60);
         }
     }
-    
+
     window.onEachFrame = onEachFrame;
 })();
 
