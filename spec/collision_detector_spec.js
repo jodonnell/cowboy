@@ -5,7 +5,7 @@ describe("CollisionDetector", function () {
 
     beforeEach(function () {
         cowboy = new Cowboy(100, 100);
-        collisionDetector = new CollisionDetection();
+        collisionDetector = new CollisionDetector();
     });
 
     it("should be able to detect rect on rect", function () {
